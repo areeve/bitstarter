@@ -4,6 +4,8 @@ var app = express.createServer(express.logger());
 
 var fetchIndex = "Hello World";
 
+var fs = require('fs');
+
 app.get('/', function(request, response) {
  var fetchString = fs.readFileSync('./index.html','utf8');
  response.send(fetchString);
