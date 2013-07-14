@@ -2,8 +2,6 @@ var express = require('express');
 
 var app = express.createServer(express.logger());
 
-var fetchIndex = "Hello World";
-
 var fs = require('fs');
 
 app.get('/', function(request, response) {
